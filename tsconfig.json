@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "target": "es5",
+    "module": "esnext",
+    "noImplicitAny": true,
+    "allowJs": true,
+    "rootDir": "src",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "lib": ["es2015", "es2015.Promise", "dom"]
+  }
+}

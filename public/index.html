@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lib Tester</title>
+</head>
+<body>
+  <pre>check console log</pre>
+  <script type="text/javascript" src="./lib.js"></script>
+  <script type="text/javascript">
+    console.log(window.lib)
+    lib.init('xxxxx')
+    
+    console.log(lib.getId())
+    
+    lib.loadPlugins(['a', 'b'])
+      .then(() => {
+        console.log(lib.a)
+        lib.a.run()
+        console.log(lib.b)
+        lib.b.run()
+      })
+      .catch(err => {
+        console.log(lib.a)
+        console.log(err)
+      })
+  </script>
+</body>
+</html>
